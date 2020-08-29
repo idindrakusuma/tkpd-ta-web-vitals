@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../../components/Header';
 import RatingReview from '../../../components/RatingReview';
 import Footer from '../../../components/Footer';
+import LazyImage from '../../../components/LazyImage';
 
 const productWrapper = {
   display: 'flex',
@@ -71,12 +72,12 @@ function Home() {
           <div className="products" style={productWrapper}>
             {data.data.map(item => (
               <Link className="product" style={productCard} key={item.id} to={`/${item.id}`}>
-                <img
+                <LazyImage
                   className="product__img"
                   style={productImg}
                   src={getResizedImage(item.image)}
                   alt={item.name}
-                ></img>
+                />
                 <div style={productInfo}>
                   <div style={productName}>{item.name}</div>
                   <div style={productPrice}>{item.price}</div>
