@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../../components/Header';
 import RatingReview from '../../../components/RatingReview';
-import Footer from '../../../components/Footer';
+import Footer from '../../../components/Footer/Lazy';
 import LazyImage from '../../../components/LazyImage';
 
 const productWrapper = {

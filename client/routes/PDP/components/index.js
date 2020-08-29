@@ -5,7 +5,7 @@ import { useData } from 'react-isomorphic-data';
 import moment from 'moment';
 import Header from '../../../components/Header';
 import RatingReview from '../../../components/RatingReview';
-import Footer from '../../../components/Footer';
+import Footer from '../../../components/Footer/Lazy';
 
 const containerStyle = {
   width: '100%',
